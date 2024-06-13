@@ -6,26 +6,35 @@ public class Bet {
     private String awayTeam;
     private String event;
 
-    public Bet(float quote, String homeTeam, String awayTeam, String event) {
-        this.quote = quote;
-        this.homeTeam = homeTeam;
-        this.awayTeam = awayTeam;
-        this.event = event;
+    public float getQuote() {
+        return this.quote;
     }
 
-    public float getQuote() {
-        return quote;
+    public void setQuote(float quote) {
+        this.quote = quote;
     }
 
     public String getHomeTeam() {
         return homeTeam;
     }
 
+    public void setHomeTeam(String homeTeam) {
+        this.homeTeam = homeTeam;
+    }
+
     public String getAwayTeam() {
         return awayTeam;
     }
 
+    public void setAwayTeam(String awayTeam) {
+        this.awayTeam = awayTeam;
+    }
+
     public String getEvent() {
         return event;
+    }
+
+    public void setEvent(String event) {
+        this.event = event;
     }
 }
